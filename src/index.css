@@ -2,133 +2,16 @@
   font-family: "Pixelify Sans", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-
-.navbar {
-  width: 220px;
-  border-right: 1px solid #ddd;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: fixed;
-  height: 100%;
-}
-
-.navbar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.navbar ul li {
-  padding: 10px 0;
-  cursor: pointer;
-  transition: background-color 0.3s;
-
-}
-
-
-/* --- Navigation Menu --- */
-.nav-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-menu {
-  list-style: none;
-  padding: 0;
+body {
   margin: 0;
-  text-align: center;
+  font-family: "Pixelify Sans", sans-serif;
+  background-color: #01294e;
+  color: var(--text-color);
+  box-sizing: border-box;
 }
 
-.nav-menu li {
-  margin: 0;
-  
-}
-
-.nav-menu ul li {
-  margin: 15px 0;       /* vertical spacing between links */
-}
-
-.nav-menu a {
-    border: 2px solid transparent;
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 1em;
-    font-weight: normal;
-    text-transform: uppercase;
-    transition: color 0.3s;
-     
-}
-
-.nav-menu a:hover {
-    color: red;
-    border: 2px solid red;
-}
-
-/* The active/highlighted menu item */
-.nav-menu li a {
-    background-color: var(--accent-color);
-    color: white;
-    padding: 8px 15px;
-    display: block;
-    margin-left: -15px;
-}
-
-
-/* --- Footer Section --- */
-.footer {
-  border-top: 1px solid #e0dede;
-  text-align: center;
-  bottom: 20px;
-  left: 0;
-  align-items: center;
-  flex-direction: column;
-  gap: 25px;
-  width: 220px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-}
-
-.social-icons a {
-    margin: 0 5px;
-    font-size: 1.2em;
-    text-decoration: none;
-}
-
-.social-icons img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain; 
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.social-icons img:hover {
-  transform: scale(1.2);
-  filter: brightness(0.5);
-}
-
-.copyright {
-    margin: 0;
-    margin-left: 5px; 
-    margin-bottom: 15px; /* Space from the bottom of the sidebar */
-
-    /* Text styles (no change) */
-    white-space: nowrap;
-    font-size: 1em;
-    color: var(--light-text, #7f8c8d);
+*, *:before, *:after {
+  box-sizing: inherit;
 }
