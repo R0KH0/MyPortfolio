@@ -1,0 +1,49 @@
+{
+  "home": {
+    "title": "WELCOME TO MY PORTFOLIO",
+    "text": ">>> SYSTEM INITIALIZED\n>>> LOADING PROFILE DATA...\n>>> RETRO TERMINAL V1.0\n\nHello! I'm a web developer passionate about creating unique digital experiences. Navigate through the channels to explore my work and background."
+  },
+  "projects": [
+    {
+      "name": "Project Alpha",
+      "description": "A full-stack web application built with React and Node.js featuring real-time data synchronization.",
+      "link": "#"
+    },
+    {
+      "name": "Terminal Portfolio",
+      "description": "An interactive portfolio website styled as a vintage CRT terminal with custom animations.",
+      "link": "#"
+    },
+    {
+      "name": "Task Manager Pro",
+      "description": "A productivity app with drag-and-drop functionality and cloud storage integration.",
+      "link": "#"
+    }
+  ],
+  "about": {
+    "text": ">>> BIO.TXT\n\nI'm a creative developer who loves blending modern technology with nostalgic aesthetics. With a background in both design and development, I create web experiences that are both functional and memorable.\n\nWhen I'm not coding, you'll find me exploring retro tech, playing vintage video games, or experimenting with creative coding projects.\n\nSpecializations:\n- Frontend Development\n- UI/UX Design\n- Retro Computing\n- Creative Coding"
+  },
+  "experience": [
+    {
+      "company": "Tech Innovations Inc.",
+      "role": "Senior Frontend Developer",
+      "duration": "2022 - PRESENT"
+    },
+    {
+      "company": "Digital Solutions Co.",
+      "role": "Full Stack Developer",
+      "duration": "2020 - 2022"
+    },
+    {
+      "company": "Creative Agency",
+      "role": "Junior Web Developer",
+      "duration": "2018 - 2020"
+    }
+  ],
+  "contact": {
+    "email": "hello@retrodev.com",
+    "phone": "+1 (555) 123-4567",
+    "github": "github.com/retrodev",
+    "linkedin": "linkedin.com/in/retrodev"
+  }
+}
