@@ -12,13 +12,7 @@ const AboutScreen = () => {
             <h1 className="text-4xl text-green-300 border-b-2 border-green-300 pb-2 mb-4">// ABOUT_ME</h1>
             <div className="space-y-4">
                 <p>
-                    I am a world-class senior frontend React engineer with a passion for creating intuitive, beautiful, and highly functional user interfaces. With deep expertise in UI/UX design, I bridge the gap between complex logic and user-friendly experiences.
-                </p>
-                <p>
-                    My journey in web development started with a fascination for how things work, and it has evolved into a career dedicated to building amazing applications that people love to use. I thrive on challenges and am constantly learning new technologies to stay at the forefront of the industry.
-                </p>
-                <p>
-                    When I'm not coding, I enjoy exploring retro technology and vintage electronics, which served as the inspiration for this very portfolio.
+                    I love coding and find joy in every line I write. For me, programming isn’t just a job—it’s a passion and a way to create, explore, and solve problems. I enjoy building projects that are both functional and visually engaging, experimenting with new technologies, and constantly learning to improve my skills. As a FullStack MERN developer, I thrive on crafting dynamic web applications, designing smooth user experiences, and turning ideas into reality. Coding is more than work, it’s a craft I love to master every day.
                 </p>
             </div>
         </div>
