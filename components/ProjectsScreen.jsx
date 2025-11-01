@@ -1,11 +1,12 @@
 import React from 'react';
+import Img from '../src/assets/tvPortfolio.png'
 
 const projects = [
     {
         title: "My Retro TV Portfolio",
         description: "A personal portfolio website designed to look like a vintage television set, with navigation buttons acting as channels to display different sections of the portfolio.",
         tech: ["React", "JavaScript", "Tailwind CSS"],
-        imageUrl: "../src/assets/tvPortfolio.png",
+        imageUrl: Img,
         github: "https://github.com/R0KH0/MyPortfolio",
         liveDemo: "https://github.com/R0KH0/MyPortfolio" 
     }

@@ -5,6 +5,7 @@ import AboutScreen from './components/AboutScreen';
 import ExperienceScreen from './components/ExperienceScreen';
 import ContactScreen from './components/ContactScreen';
 import StaticGif from './src/assets/Static.gif';
+import StaticSound from './src/assets/TVSTATIC.mp3'
 
 // TVButton component
 const TVButton = ({ label, isActive, onClick }) => {
@@ -29,11 +30,33 @@ const StaticOverlay = () => (
 );
 
 // Flicker effect for switching channels
-const FlickerEffect = () => (
-    <div className="w-full h-full bg-white animate-[flicker_0.3s_steps(2,start)_infinite]">
-         <img src={StaticGif} className="w-full h-full object-cover"/>
-    </div>
-);
+const FlickerEffect = () => {
+    React.useEffect(() => {
+        const audio = new Audio(StaticSound);
+        audio.volume = 0.4; // adjust volume as you like
+        audio.play();
+
+        // Stop sound when flicker effect ends or component unmounts
+        const stopSound = () => {
+            audio.pause();
+            audio.currentTime = 0;
+        };
+
+        // Stop after 300ms (same as your flicker duration)
+        const timeout = setTimeout(stopSound, 300);
+
+        return () => {
+            stopSound();
+            clearTimeout(timeout);
+        };
+    }, []);
+
+    return (
+        <div className="w-full h-full bg-white animate-[flicker_0.3s_steps(2,start)_infinite]">
+            <img src={StaticGif} className="w-full h-full object-cover" />
+        </div>
+    );
+};
 
 // App component
 const App = () => {
