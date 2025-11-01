@@ -4,6 +4,7 @@ import ProjectsScreen from './components/ProjectsScreen';
 import AboutScreen from './components/AboutScreen';
 import ExperienceScreen from './components/ExperienceScreen';
 import ContactScreen from './components/ContactScreen';
+import StaticGif from './src/assets/Static.gif';
 
 // TVButton component
 const TVButton = ({ label, isActive, onClick }) => {
@@ -30,10 +31,7 @@ const StaticOverlay = () => (
 // Flicker effect for switching channels
 const FlickerEffect = () => (
     <div className="w-full h-full bg-white animate-[flicker_0.3s_steps(2,start)_infinite]">
-         <img
-      src="./src/assets/tvStatic.gif"
-      className="w-full h-full object-cover"
-    />
+         <img src={StaticGif} className="w-full h-full object-cover"/>
     </div>
 );
 
