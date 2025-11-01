@@ -21,6 +21,7 @@ const TVButton = ({ label, isActive, onClick }) => {
     );
 };
 
+
 // Static overlay effect
 const StaticOverlay = () => (
     <div className="absolute inset-0 w-full h-full opacity-10 bg-[repeating-linear-gradient(transparent_0,rgba(0,0,0,0.15)_1px,transparent_2px)] pointer-events-none"></div>
@@ -29,13 +30,11 @@ const StaticOverlay = () => (
 // Flicker effect for switching channels
 const FlickerEffect = () => (
     <div className="w-full h-full bg-white animate-[flicker_0.3s_steps(2,start)_infinite]">
-         <style>{`
-            @keyframes flicker {
-                to {
-                    visibility: hidden;
-                }
-            }
-        `}</style>
+         <img
+      src="./src/assets/tvStatic.gif"
+      alt="Flicker Effect"
+      className="w-full h-full object-cover"
+    />
     </div>
 );
 
