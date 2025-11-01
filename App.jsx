@@ -32,7 +32,6 @@ const FlickerEffect = () => (
     <div className="w-full h-full bg-white animate-[flicker_0.3s_steps(2,start)_infinite]">
          <img
       src="./src/assets/tvStatic.gif"
-      alt="Flicker Effect"
       className="w-full h-full object-cover"
     />
     </div>

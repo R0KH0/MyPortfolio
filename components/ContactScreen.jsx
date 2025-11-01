@@ -15,16 +15,16 @@ const ContactScreen = () => {
             </p>
             <div className="space-y-4">
                 <div>
-                    <label className="text-amber-300 block">// EMAIL</label>
-                    <a href="mailto:contact@example.com" className="text-green-200 hover:underline">contact@example.com</a>
+                    <label className="text-amber-300 block">// E-MAIL</label>
+                    <a href="mailto:marwanerokho@gmail.com" className="text-green-200 hover:underline">marwanerokho@gmail.com</a>
                 </div>
                 <div>
                     <label className="text-amber-300 block">// LINKEDIN</label>
-                    <a href="#" className="text-green-200 hover:underline">linkedin.com/in/your-profile</a>
+                    <a href="https://www.linkedin.com/in/rokho" target='_blank' className="text-green-200 hover:underline">linkedin.com/in/rokho</a>
                 </div>
                 <div>
                     <label className="text-amber-300 block">// GITHUB</label>
-                    <a href="#" className="text-green-200 hover:underline">github.com/your-username</a>
+                    <a href="https://github.com/R0KH0" target='_blank' className="text-green-200 hover:underline">github.com/R0KH0</a>
                 </div>
             </div>
             <p className="mt-8 text-green-400/80">

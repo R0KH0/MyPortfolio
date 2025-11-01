@@ -5,9 +5,9 @@ const projects = [
         title: "My Retro TV Portfolio",
         description: "A personal portfolio website designed to look like a vintage television set, with navigation buttons acting as channels to display different sections of the portfolio.",
         tech: ["React", "JavaScript", "Tailwind CSS"],
-        imageUrl: "https://picsum.",
-        github: "https://github.com/yourusername/retro-tv-portfolio",
-        liveDemo: "https://google.com" 
+        imageUrl: "../src/assets/tvPortfolio.png",
+        github: "https://github.com/R0KH0/MyPortfolio",
+        liveDemo: "https://github.com/R0KH0/MyPortfolio" 
     }
 ];
 
@@ -26,11 +26,11 @@ const ProjectsScreen = () => {
             <div className="space-y-6 text-xl">
                 {projects.map((project, index) => (
                     <div key={index} className="border border-green-400/50 p-3 rounded">
-                        <img
+                        {/*<img
                             src={project.imageUrl}
                             alt={project.title}
                             className="w-full rounded mb-3 shadow-lg"
-                        />
+                        />*/}
                         <h2 className="text-2xl text-amber-300">{project.title}</h2>
                         <p className="text-green-200 mt-1">{project.description}</p>
 
@@ -45,7 +45,7 @@ const ProjectsScreen = () => {
                             ))}
                         </div>
 
-                        {/* 🔘 Buttons Section */}
+                        {/* Buttons Section */}
                         <div className="mt-4 flex items-center gap-4">
                             {project.github && (
                                 <a
