@@ -47,6 +47,7 @@ const FlickerEffect = () => {
         const audio = new Audio(StaticSound);
         audio.volume = 0.4; // adjust volume as you like
         audio.play();
+        audio.delie
 
         // Stop sound when flicker effect ends or component unmounts
         const stopSound = () => {

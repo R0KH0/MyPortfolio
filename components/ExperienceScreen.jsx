@@ -11,7 +11,7 @@ const experiences = [
         role: "IT Specialist – Network Systems & Surveillance",
         company: "Uma Volailles",
         period: "May 2025 - Aug 2025",
-        description: "Managed and troubleshooted local area networks (LANs) for smooth connectivity. Provided technical support for IT hardware and software related to surveillance and networking. Monitored and resolved network and system issues to minimize downtime. Installed, configured, and maintained camera surveillance systems. Ensured proper data storage, system security, and network integrity."
+        description: "Managed and troubleshooted local area networks (LANs) for smooth connectivity. Provided technical support for IT hardware and software related to surveillance and networking. Monitored and resolved network and system issues to minimize downtime. Installed, configured, and maintained camera surveillance systems. Ensured proper data storage, system security, and network integrity"
     },
     {
         role: "IT Specialist – Network Systems & Surveillance",
