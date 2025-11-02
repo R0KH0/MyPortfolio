@@ -8,7 +8,7 @@ const projects = [
         tech: ["React", "JavaScript", "Tailwind CSS"],
         imageUrl: Img,
         github: "https://github.com/R0KH0/MyPortfolio",
-        liveDemo: "https://github.com/R0KH0/MyPortfolio" 
+        liveDemo: "https://rokho.netlify.app/" 
     }
 ];
 
