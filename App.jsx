@@ -6,14 +6,26 @@ import ExperienceScreen from './components/ExperienceScreen';
 import ContactScreen from './components/ContactScreen';
 import StaticGif from './src/assets/Static.gif';
 import StaticSound from './src/assets/TVSTATIC.mp3'
+import ButtonClick from './src/assets/button-press.mp3'
 
 // TVButton component
 const TVButton = ({ label, isActive, onClick }) => {
+    // handle button click
+    const handleButtonClick = () => {
+        // play the sound
+        const audio = new Audio(ButtonClick);
+        audio.currentTime = 0; // restart sound from the beginning
+        audio.volume = 0.5; // optional volume
+        audio.play();
+
+        // call the parent click function if provided
+        if (onClick) onClick();
+  };
     return (
         <div className="flex flex-col items-center space-y-2">
             <span className="text-gray-800 text-xs font-mono uppercase tracking-wider">{label}</span>
             <button 
-                onClick={onClick}
+                onClick={handleButtonClick}
                 className={`w-12 h-12 rounded-full border-4 border-gray-600 bg-gray-800 transition-all duration-150 ease-in-out focus:outline-none focus:ring-4 focus:ring-amber-300
                 ${isActive ? 'shadow-[inset_0_4px_8px_rgba(0,0,0,0.8),0_0_10px_rgba(251,191,36,0.7)] bg-gray-900' : 'shadow-[0_5px_15px_rgba(0,0,0,0.5),inset_0_-4px_4px_rgba(255,255,255,0.2)] hover:bg-gray-700'}`}
             >
@@ -73,9 +85,9 @@ const App = () => {
 
     const navItems = [
         { label: 'Home', view: ScreenView.HOME },
-        { label: 'Projects', view: ScreenView.PROJECTS },
         { label: 'About', view: ScreenView.ABOUT },
         { label: 'Experience', view: ScreenView.EXPERIENCE },
+        { label: 'Projects', view: ScreenView.PROJECTS },
         { label: 'Contact', view: ScreenView.CONTACT },
     ];
 

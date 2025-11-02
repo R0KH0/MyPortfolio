@@ -20,7 +20,7 @@ const ContactScreen = () => {
                 </div>
                 <div>
                     <label className="text-amber-300 block">// LINKEDIN</label>
-                    <a href="https://www.linkedin.com/in/rokho" target='_blank' className="text-green-200 hover:underline">linkedin.com/in/rokho</a>
+                    <a href="https://www.linkedin.com/in/rokho" target='_blank' className="text-green-200 hover:underline">linkedin.com/ROKHO</a>
                 </div>
                 <div>
                     <label className="text-amber-300 block">// GITHUB</label>
